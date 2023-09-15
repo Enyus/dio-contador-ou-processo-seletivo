@@ -17,7 +17,7 @@ Usando uma [estrutura pré criada pelo instrutor](https://felipe-silva-aguiar.gi
 
 🚩 ***Importante lembrar que as classes de Exception devem ser criadas em um arquivo separado.***
 
-### Processo Seletivo [WIP]
+### Processo Seletivo ✔
 O desafio demonstrado nos vídeos da plataforma da DIO mostravam a resolução deste desafio, que vem [deste link](https://glysns.gitbook.io/java-basico/controle-de-fluxo/cases). Assim, vou tentar resolvê-lo com o mínimo de intervenção dos vídeos ou de consulta à solução apresentada pelo instrutor. O desafio é:
 
 1. ✔ A partir de uma lista de nomes de candidatos, o programa deve enviar mensagem informando se o RH deve ou não ligar para cada um deles, baseado no valor de salário de uma vaga para a qual se aplicaram:
