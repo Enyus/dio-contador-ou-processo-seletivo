@@ -10,12 +10,12 @@ Eu já tinha instalado o VSCode no meu computador, então o que eu fiz foi simpl
 
 No entanto, conforme dito em aula, é possível baixar o VS Code já com as configurações para o Java [aqui](https://code.visualstudio.com/docs/languages/java).
 
-### Contador [WIP]
+### Contador ✔
 Usando uma [estrutura pré criada pelo instrutor](https://felipe-silva-aguiar.gitbook.io/dio-java/desafios/controle-fluxo), o programa deve receber dois parâmetros através do console que definirão a quantidade de interações de um laço ```for```.
 * O segundo parâmetro tem que ser maior que o primeiro e, caso não for, uma excessão deverá ser lançada.
 * Cada iteração do loop deve imprimir a frase `"Imprimindo o número [i]"`, onde i é um número começando em 1.
 
-(Por enquanto, feito sem o tratamento de exceção que está nas próximas aulas do curso)
+🚩 ***Importante lembrar que as classes de Exception devem ser criadas em um arquivo separado.***
 
 ### Processo Seletivo [WIP]
 O desafio demonstrado nos vídeos da plataforma da DIO mostravam a resolução deste desafio, que vem [deste link](https://glysns.gitbook.io/java-basico/controle-de-fluxo/cases). Assim, vou tentar resolvê-lo com o mínimo de intervenção dos vídeos ou de consulta à solução apresentada pelo instrutor. O desafio é:
@@ -34,7 +34,7 @@ static double valorPretendido() {
 ---
 <br>
 
-2. Selecionar de uma lista apenas 5 candidados, baseado no retorno do item 1.
+2. ✔ Selecionar de uma lista apenas 5 candidados, baseado no retorno do item 1.
 ```java
 // Array com a lista de candidatos
 String [] candidatos = {"FELIPE","MÁRCIA","JULIA","PAULO","AUGUSTO","MÔNICA","FABRÍCIO","MIRELA","DANIELA","JORGE"};
@@ -42,10 +42,14 @@ String [] candidatos = {"FELIPE","MÁRCIA","JULIA","PAULO","AUGUSTO","MÔNICA","
 ---
 <br>
 
-3. Imprimir a lista dos candidados selecionados para os quais o RH deverá ligar.
+3. ✔ Imprimir a lista dos candidados selecionados para os quais o RH deverá ligar.
 ---
 <br>
 
-4. Criar um método que simule as ligações:
+4. ✔ Criar um método que simule as ligações (devendo ser feitas 3 tentativas):
 * Caso o candidato atenda a ligação, o sistema deve imprimir: "CONSEGUIMOS CONTATO COM `[CANDIDATO]` APÓS `[TENTATIVA]` TENTATIVA(S)";
 * Do contrário imprima: "NÃO CONSEGUIMOS CONTATO COM O(A) CANDIDATO(A) `[CANDIDATO]`".
+
+---
+
+🚩 ***É sério mesmo que não tem um método simples para adicionar um elemento a um array em Java!?***

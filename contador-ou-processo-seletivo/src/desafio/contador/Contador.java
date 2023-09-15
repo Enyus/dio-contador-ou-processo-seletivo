@@ -9,24 +9,20 @@ public class Contador {
 		int parametroUm = terminal.nextInt();
 		System.out.println("Digite o segundo parâmetro");
 		int parametroDois = terminal.nextInt();
-		
-        contar(parametroUm, parametroDois);
         
-		// try {
-		// 	//chamando o método contendo a lógica de contagem
-		// 	contar(parametroUm, parametroDois);
+		try {
+			//chamando o método contendo a lógica de contagem
+			contar(parametroUm, parametroDois);
 		
-		// }catch (ParametrosInvalidosException exception) {
-		// 	//imprimir a mensagem: O segundo parâmetro deve ser maior que o primeiro
-		// }
+		}catch (ParametrosInvalidosException exception) {
+			System.err.println("O segundo parâmetro deve ser maior que o primeiro");
+		}
     }
 
-    // static void contar(int parametroUm, int parametroDois ) throws ParametrosInvalidosException {
-    static void contar(int parametroUm, int parametroDois ) {
+    static void contar(int parametroUm, int parametroDois ) throws ParametrosInvalidosException {
 		//validar se parametroUm é MAIOR que parametroDois e lançar a exceção
         if (parametroUm >= parametroDois) {
-            System.out.println("O segundo parâmetro deve ser maior que o primeiro");
-            return;
+			throw new ParametrosInvalidosException();
         }
 		
 		int contagem = parametroDois - parametroUm;
