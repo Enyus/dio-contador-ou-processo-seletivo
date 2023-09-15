@@ -10,8 +10,42 @@ Eu já tinha instalado o VSCode no meu computador, então o que eu fiz foi simpl
 
 No entanto, conforme dito em aula, é possível baixar o VS Code já com as configurações para o Java [aqui](https://code.visualstudio.com/docs/languages/java).
 
-### Contador
-TODO
+### Contador [WIP]
+Usando uma [estrutura pré criada pelo instrutor](https://felipe-silva-aguiar.gitbook.io/dio-java/desafios/controle-fluxo), o programa deve receber dois parâmetros através do console que definirão a quantidade de interações de um laço ```for```.
+* O segundo parâmetro tem que ser maior que o primeiro e, caso não for, uma excessão deverá ser lançada.
+* Cada iteração do loop deve imprimir a frase `"Imprimindo o número [i]"`, onde i é um número começando em 1.
 
-### Processo Seletivo
-TODO
+(Por enquanto, feito sem o tratamento de exceção que está nas próximas aulas do curso)
+
+### Processo Seletivo [WIP]
+O desafio demonstrado nos vídeos da plataforma da DIO mostravam a resolução deste desafio, que vem [deste link](https://glysns.gitbook.io/java-basico/controle-de-fluxo/cases). Assim, vou tentar resolvê-lo com o mínimo de intervenção dos vídeos ou de consulta à solução apresentada pelo instrutor. O desafio é:
+
+1. ✔ A partir de uma lista de nomes de candidatos, o programa deve enviar mensagem informando se o RH deve ou não ligar para cada um deles, baseado no valor de salário de uma vaga para a qual se aplicaram:
+    * Se o valor salário base (`2000.0`), for maior que valor salário pretentido, imprima : "LIGAR PARA O CANDIDATO";
+    * Senão, Se o valor salário base for igual ao valor salário pretentido, imprima : "LIGAR PARA O CANDIDATO, COM CONTRA PROPOSTA";
+    * Senão imprima: "AGUARDANDO RESULTADO DOS DEMAIS CANDIDATOS".
+```java
+// Método nativo oferecido para gera valor aleatório.
+import java.util.concurrent.ThreadLocalRandom;
+static double valorPretendido() {
+     return ThreadLocalRandom.current().nextDouble(1800, 2200);
+}
+```
+---
+<br>
+
+2. Selecionar de uma lista apenas 5 candidados, baseado no retorno do item 1.
+```java
+// Array com a lista de candidatos
+String [] candidatos = {"FELIPE","MÁRCIA","JULIA","PAULO","AUGUSTO","MÔNICA","FABRÍCIO","MIRELA","DANIELA","JORGE"};
+```
+---
+<br>
+
+3. Imprimir a lista dos candidados selecionados para os quais o RH deverá ligar.
+---
+<br>
+
+4. Criar um método que simule as ligações:
+* Caso o candidato atenda a ligação, o sistema deve imprimir: "CONSEGUIMOS CONTATO COM `[CANDIDATO]` APÓS `[TENTATIVA]` TENTATIVA(S)";
+* Do contrário imprima: "NÃO CONSEGUIMOS CONTATO COM O(A) CANDIDATO(A) `[CANDIDATO]`".
