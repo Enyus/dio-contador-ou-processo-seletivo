@@ -53,3 +53,4 @@ String [] candidatos = {"FELIPE","MÁRCIA","JULIA","PAULO","AUGUSTO","MÔNICA","
 ---
 
 🚩 ***É sério mesmo que não tem um método simples para adicionar um elemento a um array em Java!?***
+✔ ***Ah, é porque existe diferença entre array e collections (que são mais próximas das arrays que eu estou acostumado a usar em javascript), era justamente a próxima aula haha.***
